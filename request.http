@@ -1,0 +1,47 @@
+
+POST http://localhost:8000/api/auth/register
+Content-Type: application/json
+
+{
+    "name": "test1",
+    "email": "test1@example.com",
+    "password": "password"
+}
+
+###
+POST http://localhost:8000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "test1@example.com",
+    "password": "password"
+}
+
+###
+POST http://localhost:8000/api/auth/logout
+
+###
+GET http://localhost:8000/api/healthchecker
+
+###
+GET http://localhost:8000/api/posts
+
+###
+POST http://localhost:8000/api/posts
+Content-Type: application/json
+
+{
+    "title": "Hi there",
+    "content": "This is my second post!"
+}
+
+###
+PATCH http://localhost:8000/api/posts/f1c8e784-41dd-4876-8f12-95b56e329f63
+Content-Type: application/json
+
+{
+    "title": "Hi there updated"
+}
+
+###
+DELETE  http://localhost:8000/api/posts/f1c8e784-41dd-4876-8f12-95b56e329f63

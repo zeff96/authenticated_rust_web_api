@@ -1,0 +1,20 @@
+[package]
+name = "blog"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-cors = "0.7.0"
+actix-web = "4.9.0"
+argon2 = "0.5.3"
+chrono = { version = "0.4.39", features = ["serde"] }
+dotenvy = "0.15.7"
+env_logger = "0.11.6"
+futures-util = "0.3.31"
+getrandom = "0.2.15"
+jsonwebtoken = "9.3.0"
+rand_core = { version = "0.6.4", features = ["getrandom"] }
+serde = { version = "1.0.217", features = ["derive"] }
+serde_json = "1.0.134"
+sqlx = { version = "0.8.2", features = ["runtime-async-std", "tls-native-tls", "postgres", "migrate", "chrono", "uuid"] }
+uuid = { version = "1.11.0", features = ["v4", "serde", "fast-rng", "macro-diagnostics"] }
